@@ -60,7 +60,7 @@ The resulting representations are combined using:
 - Element-wise difference
 - Element-wise product
 
-These features are concatenated and passed to an **MLP classifier** for binary prediction.
+These features are concatenated and passed to an **MLP classifier** for binary prediction. **Relevant sentences are then retrieved from the case context to support the prediction, and [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) is used to generate the final explanation based on the prediction and retrieved evidence.**
 
 ## No-Facts Baseline
 
